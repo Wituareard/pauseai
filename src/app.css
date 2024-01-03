@@ -177,7 +177,7 @@ textarea:focus {
 
 @font-face {
     font-family: 'Icomoon';
-    src: url('icomoon.woff') format('woff');
+    src: url('/icomoon.woff') format('woff');
 }
 
 a[href^='http://']::after,
