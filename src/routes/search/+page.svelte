@@ -32,9 +32,11 @@
 	<title>Search</title>
 </svelte:head>
 
-<h1>Search</h1>
+<div data-pagefind-ignore>
+	<h1>Search</h1>
 
-<div id="search" />
+	<div id="search" />
+</div>
 
 <style>
 	:root {
