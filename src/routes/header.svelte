@@ -3,7 +3,7 @@
 	import Logo from '$lib/components/logo.svelte'
 	import { botName } from '$lib/config'
 	import { page } from '$app/stores'
-	import SearchButton from '$lib/components/SearchButton.svelte'
+    import Search from 'lucide-svelte/icons/search'
 	const enableBot = false
 
 	$: logo_animate = $page.url.pathname != '/'
@@ -25,7 +25,7 @@
 		{/if}
 		<!-- <NavLink href="/about">About</NavLink> -->
 		<NavLink c2a href="/join">Join</NavLink>
-		<SearchButton />
+		<NavLink href="/search"><Search size="0.8em" /></NavLink>
 	</div>
 </nav>
 
