@@ -19,7 +19,7 @@
 			processResult: function (result: Result) {
 				result.url = result.url.replace(/(.*)\.html/, '$1')
 				for (const subResult of result.sub_results) {
-					subResult.url = subResult.url.replace(/(.*).html(#.*)/, '$1$2')
+					subResult.url = subResult.url.replace(/(.*).html(#.*)?/, '$1$2')
 				}
 			}
 		})
