@@ -39,7 +39,7 @@
 		"clipboard-polyfill": "^4.0.2",
 		"escape-html": "^1.0.3",
 		"html-to-image": "^1.11.11",
-		"lucide-svelte": "^0.330.0",
+		"lucide-svelte": "0.325.0",
 		"mapbox-gl": "^3.0.1",
 		"pagefind": "^1.0.4",
 		"rehype-slug": "^5.1.0",
