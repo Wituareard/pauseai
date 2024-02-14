@@ -23,7 +23,7 @@
 				}
 			}
 		})
-		const input = document.getElementsByClassName('pagefind-ui__search-input')[0] as HTMLElement;
+		const input = document.getElementsByClassName('pagefind-ui__search-input')[0] as HTMLElement
 		input.focus()
 	})
 </script>
@@ -49,6 +49,6 @@
 
 	#search :global(mark) {
 		background-color: var(--bg-subtle);
-		color: var(--text)
+		color: var(--text);
 	}
 </style>

@@ -3,7 +3,7 @@
 	import Logo from '$lib/components/logo.svelte'
 	import { botName } from '$lib/config'
 	import { page } from '$app/stores'
-    import Search from 'lucide-svelte/icons/search'
+	import Search from 'lucide-svelte/icons/search'
 	const enableBot = false
 
 	$: logo_animate = $page.url.pathname != '/'
