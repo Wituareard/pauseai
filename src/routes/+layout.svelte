@@ -4,6 +4,7 @@
 	import Footer from './footer.svelte'
 	import Header from './header.svelte'
 	import PageTransition from './transition.svelte'
+	import Toc from '$lib/components/Toc.svelte'
 
 	import '@fontsource/roboto-slab/300.css'
 	import '@fontsource/roboto-slab/700.css'
@@ -35,6 +36,10 @@
 		}
 	}}
 />
+
+{#if !['/', '/outcomes', '/pdoom'].includes(data.url)}
+    <Toc />
+{/if}
 
 <style>
 	/* @import url('$lib/reset.css');
