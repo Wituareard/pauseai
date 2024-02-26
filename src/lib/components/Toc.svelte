@@ -4,6 +4,7 @@
 	import X from 'lucide-svelte/icons/x'
 
 	let closeButton: HTMLElement
+	let desktop: boolean
 	let open: boolean
 	let nav: HTMLElement | undefined
 
@@ -15,12 +16,13 @@
 {#if open}
 	<div transition:fade={{ duration: 100 }} class="backdrop" />
 {/if}
-<div class="toc-wrapper">
+<div class="toc-wrapper" style={desktop ? 'display: none;' : ''}>
 	<Toc
-		breakpoint={Number.MAX_VALUE}
 		headingSelector=":is(h2, h3, h4):not(.toc-exclude):not(footer *)"
+		title="Contents"
 		bind:open
 		bind:nav
+		bind:desktop
 	/>
 </div>
 
